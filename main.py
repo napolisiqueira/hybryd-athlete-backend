@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from app.core.database import init_db
 from app.routers import exercicio, health
+from fastapi.middleware.cors import CORSMiddleware
 
 
 @asynccontextmanager
